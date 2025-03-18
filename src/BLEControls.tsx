@@ -2,8 +2,8 @@ import { useGameContext } from './GameContext.tsx'
 import { FaClock, FaHeart, FaRunning, FaTachometerAlt } from 'react-icons/fa'
 
 export const BLEControls = () => {
-  const { vitalSigns, connectBluetooth } = useGameContext();
-  const { heartRate, pace, speed, cadence } = vitalSigns;
+  const { vitalSigns, connectBluetooth } = useGameContext()
+  const { heartRate, pace, speed, cadence } = vitalSigns
   return (
     <div className="absolute top-4 left-4 z-10 flex flex-col space-y-4 p-4 bg-white bg-opacity-80 rounded shadow-lg">
       <button

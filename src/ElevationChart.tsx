@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useGameContext } from './GameContext'
-import { AreaChart, Area, ResponsiveContainer } from 'recharts'
+import { Area, AreaChart, ResponsiveContainer } from 'recharts'
 
 export const ElevationChart = () => {
   const { map } = useGameContext()
@@ -38,8 +38,8 @@ export const ElevationChart = () => {
         <AreaChart data={data}>
           <defs>
             <linearGradient id="colorElevation" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+              <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+              <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
             </linearGradient>
           </defs>
           <Area

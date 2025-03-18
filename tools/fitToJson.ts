@@ -177,10 +177,10 @@ export function savePointsToJson(points: Point[], filename: string): void {
 // Example usage:
 (async () => {
   try {
-    const buffer = fs.readFileSync("./centralpark.fit");
+    const buffer = fs.readFileSync("./lausanne.fit");
     const points = await convertFitToJson(buffer, 10);
     const mergedPoints = mergeSimilarPoints(points, 10, 10);
-    savePointsToJson(mergedPoints, "./centralpark.json");
+    savePointsToJson(mergedPoints, "./lausanne.json");
     console.log(`Saved ${mergedPoints.length} points to pathPoints.json`);
   } catch (err) {
     console.error("Error:", err);
